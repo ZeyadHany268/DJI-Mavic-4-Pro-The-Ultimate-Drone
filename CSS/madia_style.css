@@ -1,0 +1,454 @@
+/* Tablet and smaller (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  
+  /* --- Navbar --- */
+  #nav-bar {
+    padding: 15px 20px;
+  }
+  
+  #nav-bar ul {
+    gap: 10px;
+  }
+  
+  #nav-bar a {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* --- Home Section --- */
+  #home {
+    padding-top: 130px;
+  }
+  
+  #home.container {
+    width: 95%;
+  }
+  
+  /* --- Reviews Section --- */
+  #Reviews .container {
+    width: 95%;
+  }
+  
+  /* --- Products Section --- */
+  #Products .container {
+    width: 95%;
+  }
+  
+  /* --- Footer --- */
+  #footer .pad-0-24 {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hamburger-btn {
+        display: flex;
+    }
+
+    #nav-bar {
+        position: relative;
+    }
+
+    #nav-bar > div:nth-child(2) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f7f5ff;
+        padding: 16px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        z-index: 998;
+    }
+
+    #nav-bar > div:nth-child(2).nav-open {
+        display: block;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #nav-bar li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-bar a {
+        display: block;
+        padding: 10px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #nav-bar a::before {
+        display: none;
+    }
+  
+  /* --- Navbar --- */
+  #nav-bar {
+    padding: 5px 16px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #nav-bar .flex.justify-center.items-center {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  #nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+  }
+  
+  #nav-bar li {
+    display: inline-block;
+  }
+  
+  #nav-bar a {
+    margin: 0 8px;
+    font-size: 15px;
+  }
+  
+  /* --- Home Section --- */
+  #home {
+    padding-top: 160px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  #home .padding-1.border-gray.bor-rd-20px.relative.flex-1,
+  #home .pad-0-24.flex-1 {
+    flex: none;
+    width: 100%;
+    padding: 16px 0;
+  }
+  
+  #home .tx-size-48 {
+    font-size: 32px;
+  }
+  
+  #home .tx-size-20 {
+    font-size: 16px;
+  }
+  
+  #home .tx-size-36 {
+    font-size: 28px;
+  }
+  
+  #home .tx-size-24 {
+    font-size: 18px;
+  }
+  
+  /* --- Specifications Section --- */
+  #Specifications .tx-size-36 {
+    font-size: 28px;
+  }
+  
+  #Specifications .tx-size-20 {
+    font-size: 16px;
+  }
+  
+  /* TABLE: Keep original width, add horizontal scroll ONLY to container */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px;
+  }
+  
+  .table-container table {
+    min-width: 800px; /* Preserve original table width */
+    width: auto;
+  }
+  
+  /* --- Reviews Section --- */
+  #Reviews .flex.justify-between.items-start.gap-7.relative {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  #Reviews .card-sticky {
+    position: static;
+    width: 100%;
+    flex: none;
+  }
+  
+  #Reviews .h.flex-3 {
+    flex: none;
+    width: 100%;
+  }
+  
+  #Reviews .tx-size-36 {
+    font-size: 28px;
+  }
+  
+  #Reviews .tx-size-20 {
+    font-size: 16px;
+  }
+  
+  #Reviews .card .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  /* --- Products Section --- */
+  #Products .flex.justify-between.items-start.gap-1.ma-bu-30 {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  #Products .broduct-card {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 280px;
+    min-height: auto;
+  }
+  
+  #Products .tx-size-36 {
+    font-size: 28px;
+  }
+  
+  #Products .tx-size-20 {
+    font-size: 16px;
+  }
+  
+  /* --- Footer --- */
+  #footer .flex.gap-7.justify-between.items-center.ma-bu-30 {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  
+  #footer .flex-1 {
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+  
+  #footer .flex.justify-between.items-start.content-end.ma-top-5 {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #footer .flex.justify-between.items-start.content-end.ma-top-5 > div:first-child {
+    text-align: center;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  
+  /* --- Navbar --- */
+  #nav-bar {
+    padding: 10px 12px;
+  }
+  
+  #nav-bar .tx-size-24.tx-bold.mi-w {
+    font-size: 18px;
+  }
+  
+  #nav-bar a {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+  
+  #nav-bar ul {
+    gap: 6px 10px;
+  }
+  
+  /* --- Home Section --- */
+  #home {
+    padding-top: 140px;
+  }
+  
+  #home .tx-size-48 {
+    font-size: 26px;
+  }
+  
+  #home .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  #home .tx-size-36 {
+    font-size: 24px;
+  }
+  
+  #home .tx-size-16 {
+    font-size: 14px;
+  }
+  
+  #home .flex.gap-1.justify-start.items-center {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  #home .padding-1.bg-li-mov.bor-rd-20px.tx-color-white {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  
+  /* --- Specifications Section --- */
+  #Specifications .tx-size-36 {
+    font-size: 24px;
+  }
+  
+  #Specifications .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  .table-container {
+    padding: 12px;
+    margin: 40px 0;
+  }
+  
+  /* --- Reviews Section --- */
+  #Reviews .tx-size-36 {
+    font-size: 24px;
+  }
+  
+  #Reviews .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  #Reviews .card {
+    padding: 20px;
+  }
+  
+  #Reviews .card .flex.justify-between.items-start.gap-1.ma-bu-30 {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  #Reviews .card .flex.justify-between.items-start.gap-1.ma-bu-30 > div:last-child {
+    align-self: flex-start;
+  }
+  
+  #Reviews .tx-size-60.tx-bold {
+    font-size: 48px;
+  }
+  
+  /* --- Products Section --- */
+  #Products .flex.justify-between.items-start.gap-1.ma-bu-30 {
+    flex-direction: column;
+  }
+  
+  #Products .broduct-card {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: auto;
+  }
+  
+  #Products .tx-size-36 {
+    font-size: 24px;
+  }
+  
+  #Products .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  #Products .tx-size-24.tx-bold {
+    font-size: 20px;
+  }
+  
+  /* --- Footer --- */
+  #footer .flex-1 {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  #footer .flex.ma-bu-30.justify-start.gap-1.items-center {
+    justify-content: center;
+  }
+  
+  #footer .flex.justify-start.gap-7 {
+    justify-content: center;
+  }
+  
+  #footer h3 {
+    text-align: center;
+  }
+  
+  #footer ul {
+    text-align: center;
+  }
+  
+  #footer li {
+    text-align: center;
+  }
+  
+  #footer .tx-size-18 {
+    font-size: 15px;
+  }
+  
+  /* --- General Typography Adjustments --- */
+  .tx-size-36 {
+    font-size: 24px;
+  }
+  
+  .tx-size-20 {
+    font-size: 15px;
+  }
+  
+  .tx-size-18 {
+    font-size: 15px;
+  }
+  
+  .tx-size-24 {
+    font-size: 18px;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 30px 0;
+  }
+  
+  .pad-0-24 {
+    padding: 0 12px;
+  }
+  
+  .but {
+    padding: 14px 16px;
+  }
+}
+
+/* Extra Small Mobile (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  
+  #nav-bar a {
+    font-size: 13px;
+    margin: 0 4px;
+  }
+  
+  #home .tx-size-48 {
+    font-size: 22px;
+  }
+  
+  #home .tx-size-36 {
+    font-size: 20px;
+  }
+  
+  .tx-size-36 {
+    font-size: 20px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .table-container {
+    padding: 8px;
+  }
+  
+  .broduct-card {
+    padding: 16px;
+  }
+}
