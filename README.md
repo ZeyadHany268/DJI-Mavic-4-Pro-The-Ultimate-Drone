@@ -1,8 +1,6 @@
 # 🚁 DJI Mavic 4 Pro Landing Page
 
-![HTML](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5)
-![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
+
 
 A modern responsive product landing page for the **DJI Mavic 4 Pro** drone.  
 The project presents a professional product showcase with specifications comparison, customer reviews, related products, and a responsive navigation experience.
